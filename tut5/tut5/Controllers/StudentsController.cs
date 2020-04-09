@@ -31,16 +31,16 @@ namespace tut5.Controllers
 
                 con.Open();
                 var dr = com.ExecuteReader();
-                while (dr.Read())
-                {
-                    var st = new Student();
-                    st.FirstName = dr["FirstName"].ToString();
-                    st.LastName = dr["LastName"].ToString();
-                    st.IdEnrollment = dr["IdEnrollment"].ToString();
-                    st.IndexNumber = dr["IndexNumber"].ToString();
-                    st.BirthDate = dr["BirthDate"].ToString();
-                    result.Add(st);
-                }
+                //while (dr.Read())
+                //{
+                //    var st = new Student();
+                //    st.FirstName = dr["FirstName"].ToString();
+                //    st.LastName = dr["LastName"].ToString();
+                //    st.IdEnrollment = dr["IdEnrollment"].ToString();
+                //    st.IndexNumber = dr["IndexNumber"].ToString();
+                //    st.BirthDate = dr["BirthDate"].ToString();
+                //    result.Add(st);
+                //}
             }
             return Ok(result);
         }
